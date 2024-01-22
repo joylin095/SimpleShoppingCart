@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.chat-container a {
+  color: #1565c0;
+  text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.chat-container a:hover {
+  color: #003c8f;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.chat-container a:active {
+  color: #003c8f;
+}
+
+.chat-container a:focus {
+  color: #003c8f;
+}
+
+.chat-container a:visited {
+  color: #1565c0;
+}
+
+.chat-container li {
+  list-style: circle;
+}
+
+.chat-container ol {
+  list-style: decimal;
+}
+
+.chat-container ul {
+  list-style: disc;
 }
